@@ -17,3 +17,8 @@
   from = "/privacy"
   to = "/privacy-policy/"
   status = 301
+
+[[redirects]]
+  from = "/nhs-contract-guide.html"
+  to = "/nhs-contract-guide/"
+  status = 301

@@ -57,6 +57,7 @@ UDA Pulse is updated for the April 2026 NHS dental contract including:
 - User guide: https://udapulse.co.uk/guide/
 - Privacy policy: https://udapulse.co.uk/privacy-policy/
 - Terms of service: https://udapulse.co.uk/terms/
+- NHS Contract Guide: https://udapulse.co.uk/nhs-contract-guide/ — Comprehensive guide to the 2026/27 NHS dental contract, UDA band values, clawback prevention, and Compass reporting
 
 ## Contact
 
