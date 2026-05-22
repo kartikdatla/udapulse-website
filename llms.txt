@@ -1,0 +1,64 @@
+# UDA Pulse - AI Discoverability
+
+## What is UDA Pulse?
+
+UDA Pulse is a free mobile app for NHS dentists in England to track their Units of Dental Activity (UDA) delivery in real time. It is available on iOS (App Store) and Android (Google Play).
+
+## Key Facts
+
+- **Developer**: Dr. Kartik Datla (NHS Dentist & Software Developer)
+- **Website**: https://udapulse.co.uk
+- **App Store**: https://apps.apple.com/us/app/uda-pulse/id6757474721
+- **Play Store**: https://play.google.com/store/apps/details?id=com.kartikdatla.udapulse
+- **Version**: 6.0.0
+- **Price**: Free (with optional premium at GBP 4.99/month)
+- **Privacy**: All data stored locally on device. No account required. UK GDPR compliant.
+- **Works offline**: Yes, fully offline-first.
+
+## Who is it for?
+
+- NHS dental associates (the primary audience)
+- Locum dentists
+- Salaried dentists
+- Mixed NHS/private practitioners
+- Practice owners managing multiple contracts
+
+## Core Features
+
+1. **UDA Tracking**: Log Band 1, 2a, 2b, 2c, 3, Urgent, and Reg 11 treatments with one tap.
+2. **Voice Quick Add**: Say "two Band 2s" or "Band 1 and a crown for 450" to log hands-free. Works offline.
+3. **Progress Dashboard**: Real-time UDA ring, today's earnings, year-over-year comparison, clawback risk alerts.
+4. **Home Screen Widgets**: iOS and Android, 4 sizes, Today/Month/Year views, customisable colours.
+5. **Tax Calculator**: UK income tax, NI Class 2/4, student loan, personal allowance taper, VAT threshold monitoring. Supports sole trader, limited company, and PAYE per practice.
+6. **Multi-Practice**: Track multiple NHS contracts with individual targets and aggregate views.
+7. **PMS Import**: CSV import from Dentally, EXACT (Software of Excellence), SFD.
+8. **NHSBSA Compass Import**: DCS127, DCS129, SD86c report reconciliation.
+9. **Cloud Backup**: Automatic daily backup to iCloud/Google Drive.
+10. **Invoice Generator**: Create professional dental invoices for private treatments.
+11. **Practice Plan Tracker**: Track Denplan and other plan income.
+12. **20 Treatment Categories**: Comprehensive private treatment logging with price memory.
+13. **Salaried & Locum Mode**: Session logging with day rate tracking.
+14. **Business Insights**: EHR, treatment mix, FTA impact, lab cost ratios, NASDAL benchmarks.
+15. **Expense Tracking**: HMRC-aligned categories, mileage tracker (45p/25p rates).
+
+## 2026/27 NHS Contract Support
+
+UDA Pulse is updated for the April 2026 NHS dental contract including:
+- Band 2a (3 UDA), 2b (5 UDA), 2c (7 UDA) sub-bands
+- New GBP 75 urgent/unscheduled care flat fee
+- 8.2% urgent care delivery requirement
+- Fissure sealant reclassification (1-2 teeth = 3 UDA, 3+ teeth = 5 UDA)
+- Denture modification/repair now 2 UDAs
+- Complex care pathways (Pathway 1: GBP 284, Pathway 2: GBP 709, Pathway 3: GBP 248)
+
+## Pages
+
+- Landing page: https://udapulse.co.uk
+- User guide: https://udapulse.co.uk/guide/
+- Privacy policy: https://udapulse.co.uk/privacy-policy/
+- Terms of service: https://udapulse.co.uk/terms/
+
+## Contact
+
+- Email: drkdatla@gmail.com
+- Support: drkdatla@gmail.com

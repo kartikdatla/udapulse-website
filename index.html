@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UDA Tracker for NHS Dentists — Track UDAs, Prevent Clawback | UDA Pulse</title>
+<meta name="description" content="The free mobile-first UDA tracker for NHS dentists. Track UDAs in real time, prevent clawback, log treatments by voice, and estimate tax. iPhone & Android. Updated for the 2026/27 NHS dental contract.">
+<meta name="keywords" content="UDA tracker, UDA tracker app, NHS UDA tracker, how to track UDAs, track UDAs, UDA tracking app, NHS dentist app, NHS UDA target tracker, dental UDA app, NHS clawback calculator, prevent UDA clawback, Compass UDA tracker, NHSBSA Compass, FP17 tracker, Units of Dental Activity, dental activity tracker, UDA calculator, NHS dental contract 2026, Band 2a Band 2b Band 2c UDA, dentist income tracker, locum dentist app, salaried dentist app, dental tax calculator UK, dentist voice entry, dental practice management, dentist tax estimation, dental CPD tracker, dental mileage tracker, dentist widget iOS Android, NASDAL benchmarks dental, Dentally EXACT import, dental invoice generator, practice plan tracker, Denplan tracker, dental cloud backup">
+<link rel="canonical" href="https://udapulse.co.uk">
+
+<!-- Open Graph -->
+<meta property="og:title" content="UDA Tracker for NHS Dentists — Track UDAs, Prevent Clawback | UDA Pulse">
+<meta property="og:description" content="The free mobile-first UDA tracker for NHS dentists. Track UDAs in real time, prevent clawback, log treatments by voice, and estimate tax. iPhone & Android. Updated for the 2026/27 NHS dental contract.">
+<meta property="og:url" content="https://udapulse.co.uk">
+<meta property="og:site_name" content="UDA Pulse">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_GB">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="UDA Tracker for NHS Dentists — Track UDAs, Prevent Clawback | UDA Pulse">
+<meta name="twitter:description" content="Free mobile-first UDA tracker: real-time UDA tracking, voice logging, home-screen widgets, and tax estimation. For NHS associates, locum & salaried dentists. iPhone & Android.">
+
+<link rel="stylesheet" href="/css/style.css">
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "UDA Pulse",
+  "applicationCategory": "HealthApplication",
+  "applicationSubCategory": "Medical",
+  "softwareVersion": "6.0.0",
+  "operatingSystem": "iOS",
+  "downloadUrl": "https://apps.apple.com/us/app/uda-pulse/id6757474721",
+  "installUrl": "https://apps.apple.com/us/app/uda-pulse/id6757474721",
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Kartik Datla",
+    "jobTitle": "Dentist & Software Developer",
+    "url": "https://udapulse.co.uk"
+  },
+  "description": "Free mobile app for NHS dentists to track UDA delivery with voice entry, home screen widgets, tax estimation (income tax, NI, VAT), industry benchmarks, invoices, practice plans, cloud backup, and 20 treatment categories. Supports NHS associates, locum dentists, salaried dentists, and mixed/private practitioners in England. Updated for 2026/27 NHS dental contract.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "GBP"
+  },
+  "featureList": [
+    "UDA tracking with progress ring and today's earnings",
+    "Voice Quick Add — say \"two Band 2s\" to log hands-free",
+    "Tax calculator with personal allowance taper and VAT monitoring",
+    "Home screen widgets in 4 sizes with custom colours",
+    "Year-over-year comparison and multi-year trend charts",
+    "Industry benchmarks from NASDAL data",
+    "Automatic daily cloud backup with PMS CSV import",
+    "Multi-practice dashboard with aggregate stats",
+    "NHSBSA Compass report import",
+    "Salaried and locum session logging",
+    "Offline-first with local data storage",
+    "Dental invoice generator",
+    "Practice plan tracker (Denplan etc)",
+    "20 private treatment categories",
+    "Cloud backup and restore"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "UDA Pulse",
+  "applicationCategory": "HealthApplication",
+  "applicationSubCategory": "Medical",
+  "softwareVersion": "6.0.0",
+  "operatingSystem": "Android",
+  "downloadUrl": "https://play.google.com/store/apps/details?id=com.kartikdatla.udapulse",
+  "installUrl": "https://play.google.com/store/apps/details?id=com.kartikdatla.udapulse",
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Kartik Datla",
+    "jobTitle": "Dentist & Software Developer",
+    "url": "https://udapulse.co.uk"
+  },
+  "description": "Free mobile app for NHS dentists to track UDA delivery with voice entry, home screen widgets, tax estimation (income tax, NI, VAT), industry benchmarks, invoices, practice plans, cloud backup, and 20 treatment categories. Supports NHS associates, locum dentists, salaried dentists, and mixed/private practitioners in England. Updated for 2026/27 NHS dental contract.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "GBP"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "UDA Pulse",
+  "applicationCategory": "HealthApplication",
+  "applicationSubCategory": "Medical",
+  "softwareVersion": "6.0.0",
+  "operatingSystem": "iOS, Android",
+  "downloadUrl": ["https://apps.apple.com/us/app/uda-pulse/id6757474721", "https://play.google.com/store/apps/details?id=com.kartikdatla.udapulse"],
+  "installUrl": ["https://apps.apple.com/us/app/uda-pulse/id6757474721", "https://play.google.com/store/apps/details?id=com.kartikdatla.udapulse"],
+  "inLanguage": "en-GB",
+  "author": {
+    "@type": "Person",
+    "name": "Dr. Kartik Datla",
+    "jobTitle": "Dentist & Software Developer",
+    "url": "https://udapulse.co.uk"
+  },
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "NHS dental associates, locum dentists, salaried dentists, NHS practice owners"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://udapulse.co.uk/#org",
+  "name": "UDA Pulse",
+  "url": "https://udapulse.co.uk",
+  "logo": "https://udapulse.co.uk/icon.png",
+  "sameAs": ["https://apps.apple.com/us/app/uda-pulse/id6757474721", "https://play.google.com/store/apps/details?id=com.kartikdatla.udapulse"],
+  "founder": {
+    "@type": "Person",
+    "name": "Dr. Kartik Datla",
+    "jobTitle": "NHS Dentist & Software Developer",
+    "url": "https://udapulse.co.uk"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://udapulse.co.uk/"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I track my UDAs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Download UDA Pulse for free on iOS or Android. Set your annual UDA target and contract details, then log each treatment as you complete it. The app calculates your UDA delivery in real time with a progress ring showing where you stand against your target."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a UDA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A Unit of Dental Activity (UDA) is the measure used by the NHS to value dental treatments in England. Band 1 treatments generate 1 UDA, Band 2 generates 3 UDAs (with Band 2a/2b/2c sub-bands introduced from 25 November 2022), and Band 3 generates 12 UDAs. NHS dental associates are typically contracted to deliver a set number of UDAs per year."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there an app for tracking dental UDAs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. UDA Pulse is a free mobile app built specifically for NHS dentists to track UDA delivery. It supports NHS associates, locum dentists, salaried dentists, and mixed/private practitioners. Available on both iOS (App Store) and Android (Google Play)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does UDA Pulse work offline?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. UDA Pulse stores all data locally on your device with no account or internet connection required. Your data never leaves your phone. You can export reports as CSV or PDF at any time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does UDA Pulse cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "UDA Pulse is free to download and use. Core features including UDA logging, voice entry for NHS bands, dashboard with today's earnings, and expense tracking are all free. Premium features like multi-practice, business insights, industry benchmarks, automatic backup, and PMS import are available for \u00a34.99/month."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use it for private and NHS work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. UDA Pulse supports NHS, mixed, and private practice types. Track private income alongside NHS UDA delivery, log expenses by HMRC category, and get separate tax calculations for each practice based on your entity type."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is my data safe and private?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. All data is stored locally on your device — nothing is sent to the cloud. No account is required and no patient data is collected. Premium users get automatic daily backups to their device's cloud-synced folder (iCloud/Google Drive). UDA Pulse complies with UK GDPR. You can export or delete your data at any time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use voice to log UDA entries?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. UDA Pulse has built-in voice entry that works offline. Say \"Band 2\" or \"three Band 1s\" to log NHS treatments hands-free. Basic UDA voice commands are free for all users. Premium unlocks voice for private entries and batch commands like \"two Band 2s and a crown for 450\"."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does UDA Pulse have home screen widgets?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. UDA Pulse offers home screen widgets for both iOS and Android in 4 sizes. Choose between Today, This Month, or This Year views. Widgets show your UDA progress ring, earnings, and pace status. Colours are fully customisable. Tap any widget to open the app."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does UDA Pulse calculate tax for dentists?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "UDA Pulse calculates UK income tax, National Insurance Class 2 and 4, and student loan repayments from your logged NHS and private income. It supports sole trader, limited company (with corporation tax and dividends), and PAYE entity types per practice. The personal allowance taper is correctly applied above \u00a3100k. VAT threshold monitoring alerts you when approaching the \u00a390k registration threshold."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I import data from Dentally or EXACT?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. UDA Pulse can import CSV exports from Dentally, EXACT (Software of Excellence), and SFD (Software for Dentists). The parser auto-detects the format from column headers and maps Band, Date, Patient, and Amount fields automatically."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the 2026/27 UDA band values?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Under the April 2026 NHS dental contract: Band 1 = 1 UDA (exam, scale & polish, prevention), Band 2a = 3 UDA (1-2 fillings, simple extractions), Band 2b = 5 UDA (multiple fillings, anterior endo), Band 2c = 7 UDA (molar endo, surgical extractions), Band 3 = 12 UDA (crowns, bridges, dentures), Urgent = flat fee. Fissure sealants were reclassified: 1-2 teeth = 3 UDA, 3+ teeth = 5 UDA."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Track UDAs as an NHS Dentist",
+  "description": "A step-by-step guide to tracking NHS Units of Dental Activity in real time and preventing clawback using the UDA Pulse app.",
+  "totalTime": "PT2M",
+  "tool": [{"@type": "HowToTool", "name": "UDA Pulse mobile app (free, iOS & Android)"}],
+  "step": [
+    {"@type": "HowToStep", "position": 1, "name": "Download UDA Pulse", "text": "Get UDA Pulse free from the App Store (iOS) or Google Play (Android). No account needed."},
+    {"@type": "HowToStep", "position": 2, "name": "Set your contract target", "text": "Enter your annual UDA target, contract value, and working pattern during the 4-step setup wizard."},
+    {"@type": "HowToStep", "position": 3, "name": "Log treatments daily", "text": "Tap a band button (Band 1, 2a, 2b, 2c, or 3) or use voice (\"two Band 2s\") to log treatments in seconds. Add a home-screen widget for at-a-glance progress."},
+    {"@type": "HowToStep", "position": 4, "name": "Check your progress", "text": "The dashboard shows your UDA progress ring, today's earnings, year-over-year comparison, and pace alerts."},
+    {"@type": "HowToStep", "position": 5, "name": "Cross-check against Compass", "text": "Import your NHSBSA Compass reports (DCS127, DCS129, SD86c) to reconcile UDA Pulse with the official NHS figures."},
+    {"@type": "HowToStep", "position": 6, "name": "Spot clawback risk early", "text": "UDA Pulse shows the daily UDAs you need to stay above the 96% delivery threshold, so you can act before a clawback letter lands in April."},
+    {"@type": "HowToStep", "position": 7, "name": "Review reports and tax", "text": "Use Reports for monthly breakdowns, Business Insights for benchmarks, and Tax Summary for income tax, NI, and VAT estimates."}
+  ]
+}
+</script>
+</head>
+<body>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="hero-icon">📊</div>
+      <h1>UDA Pulse</h1>
+      <p class="hero-tagline">Track UDAs. Estimate Tax. Stay on Target.</p>
+      <p class="hero-desc">
+        The smart companion app for NHS dental associates, salaried dentists,
+        locum dentists, and practice owners. Built by an NHS dentist who
+        understands the daily pressure of hitting targets.
+      </p>
+      <p class="hero-highlight">
+        <strong>The mobile-first NHS UDA tracker.</strong>
+        Track UDAs in real time and prevent clawback — free on iPhone and Android,
+        works offline, no Compass credentials required.
+        <span class="badge-pill">Updated for the 2026/27 NHS dental contract</span>
+      </p>
+      <div class="btn-group">
+        <a href="https://apps.apple.com/us/app/uda-pulse/id6757474721" target="_blank" rel="noopener noreferrer" aria-label="Get the UDA tracker on the App Store" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11"/></svg>
+          Get UDA Pulse on the App Store
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.kartikdatla.udapulse" target="_blank" rel="noopener noreferrer" aria-label="Get the UDA tracker on Google Play" class="btn btn-secondary">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.61 1.814L13.793 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.61-.92zM14.5 12.707l2.302 2.302-10.937 6.333L14.5 12.707zm3.476-1.2l2.296 1.326a1 1 0 010 1.732l-2.157 1.246-2.553-2.553 2.414-2.75zM5.865 3.158l10.937 6.333L14.5 11.793 5.865 3.158z"/></svg>
+          Get UDA Pulse on Google Play
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem Statement -->
+  <section>
+    <div class="container">
+      <div class="card">
+        <h2 class="section-title">Prevent NHS clawback — stop guessing where you stand on your UDA target</h2>
+        <p style="color: var(--text-secondary); line-height: 1.75; margin-bottom: 16px;">
+          Most NHS dentists rely on Compass reports that lag weeks behind, practice
+          management software they can't access from home, or spreadsheets that
+          take longer to maintain than the treatments themselves. UDA Pulse puts
+          real-time tracking in your pocket — log treatments by voice or tap, see
+          today's earnings instantly, compare to last year, and know exactly
+          what you need to deliver.
+        </p>
+        <p style="color: var(--text-secondary); line-height: 1.75;">
+          UDA Pulse shows the daily UDAs you need to stay above the 96% delivery
+          threshold, so clawback risk is visible from quarter one — not from a letter
+          in April. Updated for the 2026/27 NHS dental contract, including the new
+          Band 2a / 2b / 2c values and the 8.2% urgent / unscheduled-care
+          requirement. Need the full method?
+          <a href="/guide/" style="text-decoration: underline;">Read the complete how-to-track-UDAs guide</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How to Track UDAs -->
+  <section id="how-to-track-udas">
+    <div class="container">
+      <h2 class="section-title">How to track UDAs as an NHS dentist</h2>
+      <p class="section-subtitle">
+        A repeatable real-time method that takes about two minutes to set up and
+        seconds per treatment thereafter. All steps work in UDA Pulse on iPhone and
+        Android — free on day one, offline from the start.
+      </p>
+      <ol class="steps-list">
+        <li class="step-item">
+          <span class="step-number">1</span>
+          <div class="step-content">
+            <h3>Download UDA Pulse</h3>
+            <p>Get UDA Pulse free from the App Store (iOS) or Google Play (Android). No account needed.</p>
+          </div>
+        </li>
+        <li class="step-item">
+          <span class="step-number">2</span>
+          <div class="step-content">
+            <h3>Set your contract target</h3>
+            <p>Enter your annual UDA target, contract value, and working pattern during the 4-step setup wizard.</p>
+          </div>
+        </li>
+        <li class="step-item">
+          <span class="step-number">3</span>
+          <div class="step-content">
+            <h3>Log treatments daily</h3>
+            <p>Tap a band button (Band 1, 2a, 2b, 2c, or 3) or use voice ("two Band 2s") to log treatments in seconds. Add a home-screen widget for at-a-glance progress.</p>
+          </div>
+        </li>
+        <li class="step-item">
+          <span class="step-number">4</span>
+          <div class="step-content">
+            <h3>Check your progress</h3>
+            <p>The dashboard shows your UDA progress ring, today's earnings, year-over-year comparison, and pace alerts.</p>
+          </div>
+        </li>
+        <li class="step-item">
+          <span class="step-number">5</span>
+          <div class="step-content">
+            <h3>Cross-check against Compass</h3>
+            <p>Import your NHSBSA Compass reports (DCS127, DCS129, SD86c) to reconcile UDA Pulse with the official NHS figures.</p>
+          </div>
+        </li>
+        <li class="step-item">
+          <span class="step-number">6</span>
+          <div class="step-content">
+            <h3>Spot clawback risk early</h3>
+            <p>UDA Pulse shows the daily UDAs you need to stay above the 96% delivery threshold, so you can act before a clawback letter lands in April.</p>
+          </div>
+        </li>
+        <li class="step-item">
+          <span class="step-number">7</span>
+          <div class="step-content">
+            <h3>Review reports and tax</h3>
+            <p>Use Reports for monthly breakdowns, Business Insights for benchmarks, and Tax Summary for income tax, NI, and VAT estimates.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Comparison -->
+  <section id="comparison">
+    <div class="container-wide">
+      <h2 class="section-title">UDA Pulse vs Compass, spreadsheets &amp; PMS reports</h2>
+      <p class="section-subtitle" style="max-width: 640px;">
+        How a mobile-first UDA tracker compares to the tools most NHS associates use
+        today. UDA Pulse is the only option in this list with a real native iPhone
+        and Android app, voice entry, and offline mode.
+      </p>
+      <div class="comparison-wrapper">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th></th>
+              <th class="highlight">UDA Pulse</th>
+              <th>NHSBSA Compass</th>
+              <th>Spreadsheets</th>
+              <th>PMS reports</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Real-time UDA tracking</td><td>Yes — instant</td><td>Lag of days–weeks</td><td>Manual update</td><td>Same-day, in-practice only</td></tr>
+            <tr><td>Native mobile app (iOS & Android)</td><td>Yes</td><td>Web only</td><td>No</td><td>No (web/desktop)</td></tr>
+            <tr><td>Works offline</td><td>Yes</td><td>No</td><td>If local file</td><td>No</td></tr>
+            <tr><td>Voice entry</td><td>Yes (offline)</td><td>No</td><td>No</td><td>No</td></tr>
+            <tr><td>Home-screen widgets</td><td>Yes — 4 sizes</td><td>No</td><td>No</td><td>No</td></tr>
+            <tr><td>Multi-practice aggregate</td><td>Yes</td><td>Per contract</td><td>Manual</td><td>Per practice only</td></tr>
+            <tr><td>UK tax & VAT calculator</td><td>Yes</td><td>No</td><td>Manual</td><td>No</td></tr>
+            <tr><td>No Compass / PMS login needed</td><td>Yes</td><td>Compass login</td><td>Local</td><td>PMS login</td></tr>
+            <tr><td>Invoice generator</td><td>Yes (v6)</td><td>No</td><td>No</td><td>Some</td></tr>
+            <tr><td>Cloud backup</td><td>Yes (v6)</td><td>N/A</td><td>Manual</td><td>Vendor-managed</td></tr>
+            <tr><td>Price</td><td>Free; &pound;4.99/mo premium</td><td>Included with contract</td><td>Free</td><td>Bundled with PMS</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section>
+    <div class="container-wide">
+      <h2 class="section-title" style="text-align: center;">Everything you need to manage your dental career</h2>
+      <p class="section-subtitle" style="text-align: center; max-width: 560px; margin-left: auto; margin-right: auto;">
+        From daily UDA logging to year-end tax estimates — one app, no spreadsheets.
+      </p>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="icon">📊</div>
+          <h3>UDA Tracking & Earnings</h3>
+          <p>Log treatments in seconds. Progress ring shows UDAs and today's earnings. Year-over-year comparison tells you if you're ahead of last year. Real undo if you make a mistake.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">🎤</div>
+          <h3>Voice Quick Add</h3>
+          <p>Say "two Band 2s" or "Band 1 and a crown for 450" to log hands-free. Basic UDA voice commands are free. Works offline — no data leaves your device.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">🧮</div>
+          <h3>Tax & VAT Calculator</h3>
+          <p>Sole trader, limited company, or PAYE — per practice. Correct personal allowance taper above &pound;100k. VAT threshold monitoring. Industry benchmarks from NASDAL data.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">📱</div>
+          <h3>Home Screen Widgets</h3>
+          <p>At-a-glance progress right on your home screen. Today, Month, or Year views in 4 sizes with customisable colours. iOS and Android.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">🏥</div>
+          <h3>Multi-Practice Dashboard</h3>
+          <p>Track each NHS contract with individual targets. Aggregate dashboard shows total UDAs and income across all practices with per-practice breakdown bars.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">💾</div>
+          <h3>Cloud Backup & PMS Import</h3>
+          <p>Automatic daily cloud backup to iCloud or Google Drive. Import CSV from Dentally, EXACT, or SFD to avoid double entry. Full audit trail on all data changes.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">📈</div>
+          <h3>Business Insights</h3>
+          <p>EHR, treatment mix, FTA impact, lab cost ratios — all compared to industry benchmarks. Multi-year UDA trend charts. CPD progress toward GDC 100-hour requirement.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">👨‍⚕️</div>
+          <h3>Salaried & Locum</h3>
+          <p>Session logging for salaried and locum dentists. Full day, half day, or custom hours. Day rate tracking. Dashboard adapts to your practice type.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">🧾</div>
+          <h3>Invoice Generator</h3>
+          <p>Create professional dental invoices for private treatments. Customise with your practice details, send directly to patients. Track payment status and follow-ups.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">📋</div>
+          <h3>Practice Plan Tracker</h3>
+          <p>Track Denplan and other practice plan income alongside NHS and private work. Monthly plan income feeds into your tax calculations and business insights.</p>
+        </div>
+        <div class="feature-card">
+          <div class="icon">🦷</div>
+          <h3>20 Treatment Categories</h3>
+          <p>Comprehensive private treatment logging with 20 categories and subtypes. Price memory remembers your last charge per treatment per practice.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Built by a Dentist -->
+  <section class="built-by">
+    <div class="built-by-icon">🦷</div>
+    <h2>Built by an NHS dentist</h2>
+    <p>
+      UDA Pulse was created by Dr. Kartik Datla, an NHS dentist who got tired of
+      tracking UDAs on paper. Every feature is designed around real clinical
+      workflows — because the developer uses it too.
+    </p>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <div class="container">
+      <h2 class="section-title" style="text-align: center; margin-bottom: 48px;">Frequently asked questions</h2>
+      <div class="faq-list">
+        <details>
+          <summary>How do I track my UDAs?</summary>
+          <div class="faq-answer">Download UDA Pulse for free on iOS or Android. Set your annual UDA target and contract details, then log each treatment as you complete it. The app calculates your UDA delivery in real time with a progress ring showing where you stand against your target.</div>
+        </details>
+        <details>
+          <summary>What is a UDA?</summary>
+          <div class="faq-answer">A Unit of Dental Activity (UDA) is the measure used by the NHS to value dental treatments in England. Band 1 treatments generate 1 UDA, Band 2 generates 3 UDAs (with Band 2a/2b/2c sub-bands introduced from 25 November 2022), and Band 3 generates 12 UDAs. NHS dental associates are typically contracted to deliver a set number of UDAs per year. See the LDC explainer at ldc.org.uk/what-is-a-uda and the NHSBSA Band 2 guidance at nhsbsa.nhs.uk for the official definitions, and the BDA UDA Value Checker at bda.org for value benchmarks.</div>
+        </details>
+        <details>
+          <summary>Is there an app for tracking dental UDAs?</summary>
+          <div class="faq-answer">Yes. UDA Pulse is a free mobile app built specifically for NHS dentists to track UDA delivery. It supports NHS associates, locum dentists, salaried dentists, and mixed/private practitioners. Available on both iOS (App Store) and Android (Google Play).</div>
+        </details>
+        <details>
+          <summary>Does UDA Pulse work offline?</summary>
+          <div class="faq-answer">Yes. UDA Pulse stores all data locally on your device with no account or internet connection required. Your data never leaves your phone. You can export reports as CSV or PDF at any time.</div>
+        </details>
+        <details>
+          <summary>How much does UDA Pulse cost?</summary>
+          <div class="faq-answer">UDA Pulse is free to download and use. Core features including UDA logging, voice entry for NHS bands, dashboard with today's earnings, and expense tracking are all free. Premium features like multi-practice, business insights, industry benchmarks, automatic backup, and PMS import are available for &pound;4.99/month.</div>
+        </details>
+        <details>
+          <summary>Can I use it for private and NHS work?</summary>
+          <div class="faq-answer">Yes. UDA Pulse supports NHS, mixed, and private practice types. Track private income alongside NHS UDA delivery, log expenses by HMRC category, and get separate tax calculations for each practice based on your entity type.</div>
+        </details>
+        <details>
+          <summary>Is my data safe and private?</summary>
+          <div class="faq-answer">Yes. All data is stored locally on your device — nothing is sent to the cloud. No account is required and no patient data is collected. Premium users get automatic daily backups to their device's cloud-synced folder (iCloud/Google Drive). UDA Pulse complies with UK GDPR. You can export or delete your data at any time.</div>
+        </details>
+        <details>
+          <summary>Can I use voice to log UDA entries?</summary>
+          <div class="faq-answer">Yes. UDA Pulse has built-in voice entry that works offline. Say "Band 2" or "three Band 1s" to log NHS treatments hands-free. Basic UDA voice commands are free for all users. Premium unlocks voice for private entries and batch commands like "two Band 2s and a crown for 450".</div>
+        </details>
+        <details>
+          <summary>Does UDA Pulse have home screen widgets?</summary>
+          <div class="faq-answer">Yes. UDA Pulse offers home screen widgets for both iOS and Android in 4 sizes. Choose between Today, This Month, or This Year views. Widgets show your UDA progress ring, earnings, and pace status. Colours are fully customisable. Tap any widget to open the app.</div>
+        </details>
+        <details>
+          <summary>How does UDA Pulse calculate tax for dentists?</summary>
+          <div class="faq-answer">UDA Pulse calculates UK income tax, National Insurance Class 2 and 4, and student loan repayments from your logged NHS and private income. It supports sole trader, limited company (with corporation tax and dividends), and PAYE entity types per practice. The personal allowance taper is correctly applied above &pound;100k. VAT threshold monitoring alerts you when approaching the &pound;90k registration threshold.</div>
+        </details>
+        <details>
+          <summary>Can I import data from Dentally or EXACT?</summary>
+          <div class="faq-answer">Yes. UDA Pulse can import CSV exports from Dentally, EXACT (Software of Excellence), and SFD (Software for Dentists). The parser auto-detects the format from column headers and maps Band, Date, Patient, and Amount fields automatically. This eliminates the need to re-enter data that already exists in your practice management system.</div>
+        </details>
+        <details>
+          <summary>What are the 2026/27 UDA band values?</summary>
+          <div class="faq-answer">Under the April 2026 NHS dental contract: Band 1 = 1 UDA (exam, scale & polish, prevention), Band 2a = 3 UDA (1-2 fillings, simple extractions), Band 2b = 5 UDA (multiple fillings, anterior endo), Band 2c = 7 UDA (molar endo, surgical extractions), Band 3 = 12 UDA (crowns, bridges, dentures), Urgent = flat fee. Fissure sealants were reclassified: 1-2 teeth = 3 UDA, 3+ teeth = 5 UDA.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section style="text-align: center; padding-bottom: 96px;">
+    <div class="container">
+      <h2 class="section-title">Start tracking your UDAs today</h2>
+      <p style="color: var(--text-secondary); margin-bottom: 32px;">
+        Free to download. No account required. Works offline from day one.
+      </p>
+      <div class="btn-group">
+        <a href="https://apps.apple.com/us/app/uda-pulse/id6757474721" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11"/></svg>
+          Download for iOS
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.kartikdatla.udapulse" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.61 1.814L13.793 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.61-.92zM14.5 12.707l2.302 2.302-10.937 6.333L14.5 12.707zm3.476-1.2l2.296 1.326a1 1 0 010 1.732l-2.157 1.246-2.553-2.553 2.414-2.75zM5.865 3.158l10.937 6.333L14.5 11.793 5.865 3.158z"/></svg>
+          Download for Android
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="inner">
+      <p>
+        UDA Pulse by Dr. Kartik Datla &middot;
+        <time datetime="2026-05-22">Last updated 22 May 2026</time>
+      </p>
+      <nav aria-label="UDA Pulse links">
+        <a href="/guide/">How to track UDAs — Guide</a>
+        <a href="/privacy-policy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+        <a href="mailto:drkdatla@gmail.com">Support</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
