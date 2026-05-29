@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>UDA Tracker for NHS Dentists — Track UDAs, Prevent Clawback | UDA Pulse</title>
 <meta name="description" content="The free mobile-first UDA tracker for NHS dentists. Track UDAs in real time, prevent clawback, log treatments by voice, and estimate tax. iPhone & Android. Updated for the 2026/27 NHS dental contract.">
-<meta name="keywords" content="UDA tracker, UDA tracker app, NHS UDA tracker, how to track UDAs, track UDAs, UDA tracking app, NHS dentist app, NHS UDA target tracker, dental UDA app, NHS clawback calculator, prevent UDA clawback, Compass UDA tracker, NHSBSA Compass, FP17 tracker, Units of Dental Activity, dental activity tracker, UDA calculator, NHS dental contract 2026, Band 2a Band 2b Band 2c UDA, dentist income tracker, locum dentist app, salaried dentist app, dental tax calculator UK, dentist voice entry, dental practice management, dentist tax estimation, dental CPD tracker, dental mileage tracker, dentist widget iOS Android, NASDAL benchmarks dental, Dentally EXACT import, dental invoice generator, practice plan tracker, Denplan tracker, dental cloud backup">
+<meta name="keywords" content="UDA tracker, UDA tracker app, NHS UDA tracker, how to track UDAs, track UDAs, UDA tracking app, NHS dentist app, NHS UDA target tracker, dental UDA app, NHS clawback calculator, prevent UDA clawback, Compass UDA tracker, NHSBSA Compass, FP17 tracker, Units of Dental Activity, dental activity tracker, UDA calculator, NHS dental contract 2026, Band 2a Band 2b Band 2c UDA, dentist income tracker, locum dentist app, salaried dentist app, dental tax calculator UK, dentist voice entry, dental practice management, dentist tax estimation, dental CPD tracker, dental mileage tracker, dentist widget iOS Android, NASDAL benchmarks dental, Dentally EXACT import, dental invoice generator, practice plan tracker, Denplan tracker, dental cloud backup, conversational Siri dental">
 <link rel="canonical" href="https://udapulse.co.uk/">
 
 <!-- Open Graph -->
@@ -59,10 +59,11 @@
     "NHSBSA Compass report import",
     "Salaried and locum session logging",
     "Offline-first with local data storage",
-    "Dental invoice generator",
-    "Practice plan tracker (Denplan etc)",
-    "20 private treatment categories",
-    "Cloud backup and restore"
+    "Monthly invoice generation with PDF and XLSX export",
+    "Practice plan integration (Denplan, Practice Plan) with tier-based fee tracking",
+    "20 private treatment categories with orthodontics and implant stage tracking",
+    "Conversational Siri — speak naturally to log treatments",
+    "Cloud backup with cross-platform device switching"
   ]
 }
 </script>
@@ -232,6 +233,22 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Yes. UDA Pulse can import CSV exports from Dentally, EXACT (Software of Excellence), and SFD (Software for Dentists). The parser auto-detects the format from column headers and maps Band, Date, Patient, and Amount fields automatically."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I generate invoices for my practice?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. UDA Pulse generates monthly invoices for your private treatments with PDF and XLSX export. Invoices use HMRC-sequential numbering and can be customised with your practice name, address, and logo. Payment status tracking lets you mark invoices as paid, outstanding, or overdue."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does UDA Pulse work with Denplan or Practice Plan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Configure your Denplan or Practice Plan tiers with the number of registered patients per tier and your associate fee percentage. UDA Pulse calculates your monthly practice plan income, feeds it into your overall earnings and tax estimates, and includes it in invoice generation."
       }
     },
     {
@@ -451,8 +468,8 @@
         </div>
         <div class="feature-card">
           <div class="icon">🎤</div>
-          <h3>Voice Quick Add</h3>
-          <p>Say "two Band 2s" or "Band 1 and a crown for 450" to log hands-free. Basic UDA voice commands are free. Works offline — no data leaves your device.</p>
+          <h3>Smart Siri & Voice Quick Add</h3>
+          <p>Say "I just did two fillings and a crown" and Siri asks follow-up questions to complete the entry. Or use the in-app mic for hands-free logging. Basic UDA voice is free; works fully offline.</p>
         </div>
         <div class="feature-card">
           <div class="icon">🧮</div>
@@ -472,7 +489,7 @@
         <div class="feature-card">
           <div class="icon">💾</div>
           <h3>Cloud Backup & PMS Import</h3>
-          <p>Automatic daily cloud backup to iCloud or Google Drive. Import CSV from Dentally, EXACT, or SFD to avoid double entry. Full audit trail on all data changes.</p>
+          <p>Automatic daily cloud backup to iCloud or Google Drive with cross-platform device switching. Import CSV from Dentally, EXACT, or SFD to avoid double entry. Full audit trail on all data changes.</p>
         </div>
         <div class="feature-card">
           <div class="icon">📈</div>
@@ -486,18 +503,18 @@
         </div>
         <div class="feature-card">
           <div class="icon">🧾</div>
-          <h3>Invoice Generator</h3>
-          <p>Create professional dental invoices for private treatments. Customise with your practice details, send directly to patients. Track payment status and follow-ups.</p>
+          <h3>Monthly Invoice Generator</h3>
+          <p>Generate professional monthly invoices for private treatments with PDF and XLSX export. HMRC-sequential numbering, customisable practice details, and payment status tracking.</p>
         </div>
         <div class="feature-card">
           <div class="icon">📋</div>
           <h3>Practice Plan Tracker</h3>
-          <p>Track Denplan and other practice plan income alongside NHS and private work. Monthly plan income feeds into your tax calculations and business insights.</p>
+          <p>Configure Denplan and Practice Plan tiers with associate fee tracking. Monthly plan income feeds into tax calculations, business insights, and invoice generation.</p>
         </div>
         <div class="feature-card">
           <div class="icon">🦷</div>
           <h3>20 Treatment Categories</h3>
-          <p>Comprehensive private treatment logging with 20 categories and subtypes. Price memory remembers your last charge per treatment per practice.</p>
+          <p>Comprehensive private treatment logging with 20 categories grouped by type — Diagnostic, Preventive, Restorative, Surgical, Cosmetic, Specialist. Orthodontics and implant multi-stage tracking with open courses. Price memory per treatment per practice.</p>
         </div>
       </div>
     </div>
@@ -562,6 +579,14 @@
         <details>
           <summary>Can I import data from Dentally or EXACT?</summary>
           <div class="faq-answer">Yes. UDA Pulse can import CSV exports from Dentally, EXACT (Software of Excellence), and SFD (Software for Dentists). The parser auto-detects the format from column headers and maps Band, Date, Patient, and Amount fields automatically. This eliminates the need to re-enter data that already exists in your practice management system.</div>
+        </details>
+        <details>
+          <summary>Can I generate invoices for my practice?</summary>
+          <div class="faq-answer">Yes. UDA Pulse generates monthly invoices for your private treatments with PDF and XLSX export. Invoices use HMRC-sequential numbering and can be customised with your practice name, address, and logo. Payment status tracking lets you mark invoices as paid, outstanding, or overdue.</div>
+        </details>
+        <details>
+          <summary>Does UDA Pulse work with Denplan or Practice Plan?</summary>
+          <div class="faq-answer">Yes. Configure your Denplan or Practice Plan tiers with the number of registered patients per tier and your associate fee percentage. UDA Pulse calculates your monthly practice plan income, feeds it into your overall earnings and tax estimates, and includes it in invoice generation.</div>
         </details>
         <details>
           <summary>What are the 2026/27 UDA band values?</summary>
